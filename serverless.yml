@@ -1,4 +1,4 @@
-service: url-redirect
+service: url-redirects
 frameworkVersion: '3'
 
 provider:
@@ -11,6 +11,6 @@ functions:
     events:
       - httpApi: '*'
     environment:
-      MONGODB_URI :    # - mongodb_uri
+      # MONGODB_URI : mongouri
 plugins:
   - serverless-offline
