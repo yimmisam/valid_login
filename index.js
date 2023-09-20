@@ -1,4 +1,6 @@
-import serverless from "serverless-http";
 import app from "./src/app.js";
+import { PORT } from "./src/config.js";
 
-export const handler = serverless(app);
+app.listen(PORT);
+
+console.log("Server running on port", PORT);
